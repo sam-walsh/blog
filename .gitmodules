@@ -1,0 +1,4 @@
+[submodule "samblog/public"]
+	path = samblog/public
+	url = https://github.com/sam-walsh/sam-walsh.github.io.git
+	branch = main
