@@ -11,22 +11,16 @@
     weight = 2
 
 [[main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories"
+    identifier = "sxwoba"
+    name = "sxwOBA app"
+    url = "https://sxwoba.herokuapp.com"
     weight = 3
 
 [[main]]
-    identifier = "tags"
-    name = "Tags"
+    identifier = "cv"
+    name = "CV"
     url = "/tags"
     weight = 4
-
-[[main]]
-    identifier = "donate"
-    name = "Donate"
-    url = "https://ko-fi.com/nixentric"
-    weight = 5
 
 
 # Social Media Configuration
@@ -34,17 +28,17 @@
 [[social]]
     identifier = "twitter"
     name = "Twitter"
-    url = "#"
+    url = "https://twitter.com/samueljwalsh"
     weight = 1
 
 [[social]]
-    identifier = "instagram"
-    name = "Instagram"
-    url = "#"
+    identifier = "linkedin"
+    name = "LinkedIn"
+    url = "https://linkedin.com/in/sam-walsh-585750168/"
     weight = 2
 
 [[social]]
     identifier = "github"
     name = "GitHub"
-    url = "#"
+    url = "https://github.com/sam-walsh"
     weight = 3

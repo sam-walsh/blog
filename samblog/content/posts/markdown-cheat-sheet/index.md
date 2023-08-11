@@ -12,7 +12,7 @@ tags:
 
 This Markdown cheat sheet **provides** a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic *syntax* and extended syntax.
 
-{{< img src="cat.jpg" alt="how are u" size-method="Fit" size-format="600x400 webp" position="center" >}}
+
 
 
 
@@ -76,9 +76,3 @@ term
 
 That is so funny! :joy:
 Ini adalah contoh lain dari subscript: x_{2}_.
-
-
-{{< begin-task-list >}}
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
