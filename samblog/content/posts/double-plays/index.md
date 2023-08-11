@@ -20,7 +20,7 @@ If you look closely at the wOBA equation, you'll notice that it only credits hit
 
 But let's take a step back for a second and think about double plays. They are treated the same as a single out because any events where the batter does not get on base are treated the same (+0 to the numerator, +1 to the denominator). This means that wOBA will neglect the value of *all* double plays. This is a major issue because wOBA and its variations are used in some of the most commonly used stats in the baseball community. wRC+, xwOBA, and xERA all inherit this bias from wOBA.
 
-For some players this bias is negligible, for others it is substantial. It really just depends how much of an outlier the player is in terms of their frequency of double plays. A hitter who grounds into many plays will be *less* productive than their wOBA indicates, and a hitter who grounds into few double plays will be *more* productive than their wOBA indicates.
+For some players this bias is negligible, for others it is substantial. It really just depends how much of an outlier the player is in terms of their frequency of double plays. A hitter who grounds into many double plays will be *less* productive than their wOBA indicates, and a hitter who grounds into few double plays will be *more* productive than their wOBA indicates.
 
 Now, wOBA is mainly an offensive stat, but it has been adapted to evaluate pitchers in several different cases and they also fail to take into account double plays. Baseball savant’s expected ERA (xERA) takes a pitcher’s xwOBA and and puts it on an ERA scale so that we can get a better picture of run prevention skill with respect to contact quality.
 
