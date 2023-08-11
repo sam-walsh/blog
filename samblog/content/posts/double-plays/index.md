@@ -5,7 +5,7 @@ author = "Sam"
 description = "How we choose to calculate linear weights has major implications"
 +++
 
-I've been working on sxwOBA, a baseball statistic that aims to model expected hitting outcomes based on the exit velocity, launch angle, spray direction, and batter sprint speed of a given batted-ball event. The metric was inspired by the statcast metric [xwOBA](https://baseballsavant.mlb.com/leaderboard/expected_statistics) which contrastingly leaves out spray angle. 
+I've been working on [sxwOBA](https://sxwoba.herokuapp.com/), a baseball statistic that aims to model expected hitting outcomes based on the exit velocity, launch angle, spray direction, and batter sprint speed of a given batted-ball event. The metric was inspired by the statcast metric [xwOBA](https://baseballsavant.mlb.com/leaderboard/expected_statistics) which contrastingly leaves out spray angle. 
 
 As baseball savant notes:
 > "Expected Outcome stats help to remove defense and ballpark from the equation to express the skill shown at the moment of batted ball contact."
@@ -28,7 +28,7 @@ Similarly, using wOBA to measure the effectiveness of different pitch types resu
 
 {{< img src="pitch_gidp.png" alt="how are u" size-method="Fit" size-format="800x800 webp" position="center" >}}
 
-This problem extends to stuff quality models as well. These metrics evaluate pitches based on their expected run value (xRV) by learning how pitches of similar characteristics (velocity, movement, release position, etc). However, run value isn't a very well-defined metric in the sabermetrics community--there are different ways of calculating it with different levels of granularity and some important tradeoffs to take into account with each. The main differencs lie in how situational outs are treated. 
+This problem extends to stuff quality models as well. These metrics evaluate pitches based on their expected run value (xRV) by learning how pitches of similar characteristics (velocity, movement, release position, etc) perform. However, run value isn't a very well-defined metric in the sabermetrics community--there are different ways of calculating it with different levels of granularity and some important tradeoffs to take into account with each. The main differencs lie in how situational outs are treated. 
 
 The simple method, which is used in Stuff+, uses linear weights like the ones used in wOBA and treats all outs as equal to remain context-neutral. That means double plays, force outs, and sacrifice flies get replaced with the run value of a single out. This reduces some of the noise in run values so that we reward the pitcher based on how the pitch would perform in most scenarios, rather than situationally. But this really isn't the right way to go about things. Pitchers have a fair amount of control over the launch angle of their balls in play. Pitchers who get more ground balls will induce more double plays in the long run. These pitchers will also be more adept at avoiding sacrifice flies by keeping the ball out of the air more often. These discrepancies help explain why sinkers and changeups are so poorly rated by Stuff+.
 

@@ -17,28 +17,13 @@
     weight = 3
 
 [[main]]
-    identifier = "cv"
-    name = "CV"
-    url = "/tags"
-    weight = 4
-
-
-# Social Media Configuration
-
-[[social]]
-    identifier = "twitter"
-    name = "Twitter"
-    url = "https://twitter.com/samueljwalsh"
-    weight = 1
-
-[[social]]
     identifier = "linkedin"
     name = "LinkedIn"
     url = "https://linkedin.com/in/sam-walsh-585750168/"
-    weight = 2
+    weight = 4
 
-[[social]]
+[[main]]
     identifier = "github"
     name = "GitHub"
     url = "https://github.com/sam-walsh"
-    weight = 3
+    weight = 5
