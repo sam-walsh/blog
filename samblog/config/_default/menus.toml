@@ -11,8 +11,8 @@
     weight = 2
 
 [[main]]
-    identifier = "sxwoba"
-    name = "sxwOBA app"
+    identifier = "xwoba"
+    name = "xwOBA app"
     url = "https://sxwoba.herokuapp.com"
     weight = 3
 
