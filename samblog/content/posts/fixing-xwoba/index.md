@@ -1,3 +1,10 @@
++++
+title = "Baseball's Unseen Bias: How wOBA Overlooks the True Value of Specific Outcomes"
+date = "2023-08-18"
+author = "Sam"
+description = "Proof I wasn't lying in my previous post"
++++
+
 In my last post, I discussed the drawbacks of weighted on-base average (wOBA) and how its biases seep into other popular metrics like xwOBA, xERA, wRC+, and even some stuff quality models. The basis of my argument was that wOBA takes an oversimplified approach to weighting different outcomes. Specifically, it weights all outs equally, leading to an undervaluing of ground balls and double plays. I showed that there is a fundamental bias in how wOBA is calculated, but that doesn’t mean much unless I show you the magnitude of that bias which is what I’m going to do today.
 
 
@@ -27,7 +34,7 @@ It looks exactly the same at first. But if you take the difference between the t
 
 As you can see, batted balls in the ground ball range of exit velocities and launch angles are overvalued by wOBA by about 0.05 runs. This may not seem like a lot, but when you consider that your regular qualified starting pitcher has about 500 balls in play over the course of a full season, it quickly begins to add up. Similarly, groundball pitchers work to keep the ball out of the air, thereby limiting sacrifice flies. This strategy becomes even more valuable considering that wOBA undervalues the importance of fly balls within this category of batted balls, which makes ground balls more valuable in comparison.
 
-Last and probably least, the value of a bunt improves slightly. I think it’s pretty amusing that some of the trends away from “small ball”--good up-the-middle defense, keeping the ball in the infield, and bunting can be attributed to using wOBA and wRC+ (a rescaled and park and era-adjusted version) as our primary stats to measure offense in recent years.
+Last and probably least, the value of a bunt improves slightly. I think it’s pretty amusing that some of the trends away from “small ball”--good up-the-middle defense, keeping the ball in the infield, and less bunting can be attributed to using wOBA and wRC+ (a rescaled and park and era-adjusted version of wOBA) as our primary stats to measure offense in recent years.
 
 Taking the same nearest-neighbor approach and using it to predict the most likely pitch type based on exit velocity and launch angle yields another interesting visualization. Sinkers are the most common pitch type in the bucket of exit velocities and launch angles that wOBA undervalues most. This makes intuitive sense because a good sinker is a hard pitch to hit in the air and it is a weapon often leaned on by pitchers looking to induce a double play.
 
