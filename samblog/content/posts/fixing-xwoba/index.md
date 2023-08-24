@@ -46,7 +46,7 @@ So there you have it. Now we understand why OPS, a stat that combines two differ
 
 In my next article, I will introduce a new version of xERA that accounts for the biases present in xwOBA. I’ve always felt like xERA should perform like a more accurate version of FIP, and with these improvements I think we will get there.
 
-As a little preview, here are this year’s leaders of predicted run value (per batter faced, min. 100IP). 
+As a preview, here are this year’s leaders of predicted run value (per batter faced, min. 100IP). 
 
 {{< img src="xrv_leaders.png" alt="how are u" size-method="Fit" size-format="800x800 webp" position="center" >}}
 
